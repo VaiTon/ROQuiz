@@ -55,9 +55,7 @@ class _ViewQuizState extends State<ViewQuiz> {
 
   void _calculateQuizGrade() {
     setState(() {
-      _quizGrade = (_questionNumber > 0
-          ? (_correctAnswers / _questionNumber * 2.0).round()
-          : 0);
+      _quizGrade = (_questionNumber > 0 ? (_correctAnswers * 2) : 0);
     });
   }
 
